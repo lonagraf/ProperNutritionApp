@@ -1,0 +1,59 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:properNutritionApp="clr-namespace:ProperNutritionApp"
+             mc:Ignorable="d" d:DesignWidth="1300" d:DesignHeight="600"
+             x:Class="ProperNutritionApp.RecipePage">
+    <UserControl.Resources>
+        <properNutritionApp:ImageConverter x:Key="ImageConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid HorizontalAlignment="Left">
+        <Grid.Styles>
+            <Style Selector="TextBlock">
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+            <Style Selector="Button">
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+        </Grid.Styles>
+            
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="900"/>
+                <ColumnDefinition Width="400"/>
+            </Grid.ColumnDefinitions>
+        <controls:Card Grid.Column="0" Margin="10" CornerRadius="10" >
+            <ScrollViewer>
+            <ListBox Name="LBoxRecipes" Height="650" Width="900" SelectionChanged="LBoxRecipes_OnSelectionChanged">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate >
+                   <DataTemplate >
+                       <StackPanel Width="400" Height="300">
+                           <TextBlock x:CompileBindings="False" Text="{Binding RecipeName}" HorizontalAlignment="Center"/>
+                           <Image x:CompileBindings="False" Width="200" Height="200" Source="{Binding Image, Converter={StaticResource ImageConverter}}" HorizontalAlignment="Center"></Image>
+                           <TextBlock x:CompileBindings="False" Text="{Binding Calories, StringFormat=На 1 порцию - {0} ккал}" HorizontalAlignment="Center"/>
+                       </StackPanel>
+                   </DataTemplate>
+               </ListBox.ItemTemplate>
+            </ListBox>
+            </ScrollViewer>
+        </controls:Card>
+            <controls:Card Grid.Column="1"  Margin="10" CornerRadius="10">
+                 <Panel Name="RecipeInfoPanel"></Panel>
+                </controls:Card>
+            
+        </Grid>
+    </Grid>
+</UserControl>

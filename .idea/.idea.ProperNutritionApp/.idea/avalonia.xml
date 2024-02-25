@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ProperNutritionApp/App.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/DashboardPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/DiaryPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/MainWindow.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/RecipeInfo.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/RecipePage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/ReportPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/SettingsPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/UserPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,40 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ProperNutritionApp.RecipeInfo">
+    <Grid>
+        <Grid.Styles>
+            <Style Selector="TextBlock">
+                <Setter Property="Margin" Value="0"></Setter>
+                <Setter Property="FontWeight" Value="Light"/>
+            </Style>
+        </Grid.Styles>
+        <ScrollViewer>
+        <StackPanel>
+            <TextBlock Text="Шаги приготовления" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
+            <TextBlock Name="InstructionsTxt" TextWrapping="Wrap"/>
+            <TextBlock Text="Ингредиенты" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
+            <ListBox Name="LBoxIngredient">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" x:CompileBindings="False" Text="{Binding Ingredient}"/>
+                            <TextBlock Grid.Column="1" x:CompileBindings="False" Text="{Binding Quantity, StringFormat= {}{0} г.}" Margin="0 0 5 0"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <TextBlock Text="БЖУ" HorizontalAlignment="Center" FontWeight="Bold" Margin="10"/>
+            <TextBlock Name="ProteinTxt" HorizontalAlignment="Center"/>
+            <TextBlock Name="FatTxt" HorizontalAlignment="Center"/>
+            <TextBlock Name="CarbsTxt" HorizontalAlignment="Center"/>
+        </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
