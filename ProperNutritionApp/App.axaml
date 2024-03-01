@@ -5,7 +5,8 @@
              x:Class="ProperNutritionApp.App"
              RequestedThemeVariant="Default">
     <Application.Resources>
-        <themes:BundledTheme BaseTheme="Light" PrimaryColor="Teal" SecondaryColor="Amber"/>
+        <themes:BundledTheme BaseTheme="Light" PrimaryColor="LightBlue" SecondaryColor="Purple"/>
+        
     </Application.Resources>
     <Application.Styles>
         <themes:MaterialTheme PrimaryColor="Purple" SecondaryColor="Lime" />

@@ -9,23 +9,28 @@ namespace ProperNutritionApp;
 
 public partial class UserPage : UserControl
 {
+    private int _uId;
     private Database _db = new Database();
     private ObservableCollection<User> _users = new ObservableCollection<User>();
     private string sql = "select user_id, username, password, first_name, birthday, gender_name, weight, height, goal_name, activity_ratio, age from user " +
                          "join nutrition.gender g on g.gender_id = user.gender " +
                          "join nutrition.goal g2 on g2.goal_id = user.goal " + 
-                         "join nutrition.activity a on a.activity_id = user.activity";
+                         "join nutrition.activity a on a.activity_id = user.activity " +
+                         "where user_id = @id";
     
-    public UserPage()
+    public UserPage(int userId)
     {
         InitializeComponent();
-        ShowTable(sql);
+        _uId = userId;
+        ShowTable(sql, _uId);
+        
     }
 
-    private void ShowTable(string sql)
+    private void ShowTable(string sql, int id)
     {
         _db.OpenConnetion();
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
+        command.Parameters.AddWithValue("@id", id);
         MySqlDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {

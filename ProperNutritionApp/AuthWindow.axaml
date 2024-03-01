@@ -1,0 +1,44 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+        xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ProperNutritionApp.AuthWindow"
+        Title="AuthWindow"
+        WindowStartupLocation="CenterScreen"
+        CanResize="False"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True"
+        IsHitTestVisible="True"
+        Width="400"
+        Height="450"
+        >
+    <Grid>
+       <Grid.Styles>
+            <Style Selector="TextBox">
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+        </Grid.Styles>
+        <controls:Card Margin="10" CornerRadius="10" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="300"/>
+                </Grid.RowDefinitions>
+                <materialIcons:MaterialIcon Grid.Row="1" Kind="Heart" Height="50" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <materialIcons:MaterialIcon Grid.Row="0" Kind="Close" Height="20" Width="20" HorizontalAlignment="Right" VerticalAlignment="Top" Name="CloseApp" Tapped="CloseApp_OnTapped"/>
+                <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBox Name="LoginTxt" Width="150" Height="50" Watermark="Login" HorizontalContentAlignment="Center" FontSize="20"></TextBox>
+                    <Separator Width="150" Height="1" Background="Black" Margin="0 -10 0 0 "></Separator>
+                    <TextBox Name="PasswordTxt" Width="150" Height="50" Watermark="Password" PasswordChar="*" FontSize="20" HorizontalContentAlignment="Center"></TextBox>
+                    <Separator Width="150" Height="1" Background="Black" Margin="0 -10 0 0 "></Separator>
+                    <Button Name="SignInBtn" Content="Войти" Classes="Outline" BorderBrush="Black" Width="150" Foreground="Black" Margin="10" Click="SignInBtn_OnClick" />
+                    <TextBlock Name="SignUpTxt" Text="Регистрация" HorizontalAlignment="Center" Tapped="SignUpTxt_OnTapped"/>
+                </StackPanel>
+            </Grid>
+        </controls:Card>
+    </Grid>
+</Window>

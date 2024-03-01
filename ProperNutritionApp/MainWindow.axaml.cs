@@ -5,9 +5,11 @@ namespace ProperNutritionApp;
 
 public partial class MainWindow : Window
 {
-    public MainWindow()
+    private int _uId;
+    public MainWindow(int userId)
     {
         InitializeComponent();
+        _uId = userId;
     }
 
     private void HomeBtn_OnClick(object? sender, RoutedEventArgs e)
@@ -20,7 +22,7 @@ public partial class MainWindow : Window
     private void ProfileBtn_OnClick(object? sender, RoutedEventArgs e)
     {
         PagesPanel.Children.Clear();
-        UserPage userPage = new UserPage();
+        UserPage userPage = new UserPage(_uId);
         PagesPanel.Children.Add(userPage);
     }
 

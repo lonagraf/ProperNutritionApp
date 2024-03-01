@@ -18,6 +18,9 @@ build_property.ProjectDir = C:\Users\lonah\RiderProjects\ProperNutritionApp\Prop
 [C:/Users/lonah/RiderProjects/ProperNutritionApp/ProperNutritionApp/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/lonah/RiderProjects/ProperNutritionApp/ProperNutritionApp/AuthWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/lonah/RiderProjects/ProperNutritionApp/ProperNutritionApp/DashboardPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
@@ -31,6 +34,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/lonah/RiderProjects/ProperNutritionApp/ProperNutritionApp/RecipePage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lonah/RiderProjects/ProperNutritionApp/ProperNutritionApp/RegistrationWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/lonah/RiderProjects/ProperNutritionApp/ProperNutritionApp/ReportPage.axaml]

@@ -4,11 +4,13 @@
     <option name="projectPerEditor">
       <map>
         <entry key="ProperNutritionApp/App.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/AuthWindow.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/DashboardPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/DiaryPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/MainWindow.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/RecipeInfo.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/RecipePage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
+        <entry key="ProperNutritionApp/RegistrationWindow.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/ReportPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/SettingsPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/UserPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
