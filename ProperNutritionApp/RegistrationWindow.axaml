@@ -16,18 +16,24 @@
         Height="700">
     <Grid>
         <controls:Card Margin="10" CornerRadius="10">
-            <Grid >
-                <StackPanel Width="250" Margin="10">
-                <TextBox Name="LoginTxt" Watermark="Login"/>
-                <TextBox Name="PasswordTxt" Watermark="Password"/>
-                <TextBox Name="NameTxt" Watermark="Name"/>
-                <DatePicker Name="BirthdayPicker"/>
-                <ComboBox Name="GenderCmb" />
-                <TextBox Name="WeightNum" Watermark="Weight"/>
-                <TextBox Name="HeightNum" Watermark="Height"/>
-                <ComboBox Name="GoalCmb"/>
-                <ComboBox Name="ActivityCmb"/>
-                <Button Name="SignUpBtn" Content="Регистрация" Classes="Outline" BorderBrush="Black" Width="150" Foreground="Black" Margin="10" Click="SignUpBtn_OnClick"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <materialIcons:MaterialIcon Grid.Row="0" Kind="Close" Height="20" Width="20" HorizontalAlignment="Right" VerticalAlignment="Top" Name="BackMain" Tapped="BackMain_OnTapped"/>
+                <StackPanel Grid.Row="1" Width="250" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <materialIcons:MaterialIcon Kind="UserAdd" Height="50" Width="50"/>
+                    <TextBox Name="LoginTxt" Watermark="Login"/>
+                    <TextBox Name="PasswordTxt" Watermark="Password"/>
+                    <TextBox Name="NameTxt" Watermark="Name"/>
+                    <DatePicker Name="BirthdayPicker"/>
+                    <ComboBox Name="GenderCmb" />
+                    <TextBox Name="WeightNum" Watermark="Weight"/>
+                    <TextBox Name="HeightNum" Watermark="Height"/>
+                    <ComboBox Name="GoalCmb"/>
+                    <ComboBox Name="ActivityCmb"/>
+                    <Button Name="SignUpBtn" Content="Регистрация" Classes="Outline" BorderBrush="Black" Width="150" Foreground="Black" Margin="10" Click="SignUpBtn_OnClick"/>
                 </StackPanel>
             </Grid>
         </controls:Card>
