@@ -2,6 +2,10 @@
 
 ![image](https://github.com/lonagraf/ProperNutritionApp/assets/122952983/70d14e06-0911-44d6-895b-1e0622df05cc)
 
+# Регистрация
+
+![image](https://github.com/lonagraf/ProperNutritionApp/assets/122952983/7e44dc12-63be-4f94-9b11-02e857f88f4c)
+
 
 # Рецепты
 
