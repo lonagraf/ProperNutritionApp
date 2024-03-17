@@ -14,3 +14,8 @@
 # Профиль пользователя
 
 ![image](https://github.com/lonagraf/ProperNutritionApp/assets/122952983/c99ccc10-6c92-418a-a7af-1e1b1a1da586)
+
+# Отслеживание изменения веса
+
+![image](https://github.com/lonagraf/ProperNutritionApp/assets/122952983/d3add4e3-cfa8-41d0-87cd-a9717e191902)
+
