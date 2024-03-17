@@ -37,7 +37,7 @@
                             </controls:FloatingButton>
                         </ListBoxItem>
                         <ListBoxItem HorizontalAlignment="Center" Margin="0 10">
-                            <controls:FloatingButton Name="DiaryBtn" HorizontalAlignment="Left" BorderBrush="Transparent" Background="Transparent" Foreground="Black" >
+                            <controls:FloatingButton Name="DiaryBtn" HorizontalAlignment="Left" BorderBrush="Transparent" Background="Transparent" Foreground="Black" Click="DiaryBtn_OnClick">
                                 <StackPanel Margin="-5">
                                     <materialIcons:MaterialIcon Kind="Diary"/>
                                 </StackPanel>
@@ -51,7 +51,7 @@
                             </controls:FloatingButton>
                         </ListBoxItem>
                         <ListBoxItem HorizontalAlignment="Center" Margin="0 10">
-                            <controls:FloatingButton Name="ReportBtn" HorizontalAlignment="Left" BorderBrush="Transparent" Background="Transparent" Foreground="Black" >
+                            <controls:FloatingButton Name="ReportBtn" HorizontalAlignment="Left" BorderBrush="Transparent" Background="Transparent" Foreground="Black" Click="ReportBtn_OnClick" >
                                 <StackPanel Margin="-5">
                                     <materialIcons:MaterialIcon Kind="Resistor"/>
                                 </StackPanel>
@@ -65,9 +65,9 @@
                             </controls:FloatingButton>
                         </ListBoxItem>
                         <ListBoxItem HorizontalAlignment="Center" Margin="0 60">
-                            <controls:FloatingButton Name="SettingsBtn" HorizontalAlignment="Left" BorderBrush="Transparent" Background="Transparent" Foreground="Black" >
+                            <controls:FloatingButton Name="LogoutBtn" HorizontalAlignment="Left" BorderBrush="Transparent" Background="Transparent" Foreground="Black" Click="LogoutBtn_OnClick">
                                 <StackPanel Margin="-5">
-                                    <materialIcons:MaterialIcon Kind="Settings"/>
+                                    <materialIcons:MaterialIcon Kind="Logout"/>
                                 </StackPanel>
                             </controls:FloatingButton>
                         </ListBoxItem>

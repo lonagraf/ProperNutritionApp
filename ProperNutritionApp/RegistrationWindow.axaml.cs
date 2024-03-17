@@ -39,7 +39,7 @@ public partial class RegistrationWindow : Window
         {
             try
             {
-                _db.OpenConnetion();
+                _db.OpenConnection();
                 string sql =
                     "insert into user (username, password, first_name, birthday, gender, weight, height, goal, activity) values (@un, @ps, @fn, @b, @g, @w, @h, @goal, @a)";
                 MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
@@ -69,7 +69,7 @@ public partial class RegistrationWindow : Window
     
     private void LoadDataGenderCmb()
     {
-        _db.OpenConnetion();
+        _db.OpenConnection();
         string sql = "select gender_name from gender";
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         MySqlDataReader reader = command.ExecuteReader();
@@ -87,7 +87,7 @@ public partial class RegistrationWindow : Window
 
     private void LoadDataGoalCmb()
     {
-        _db.OpenConnetion();
+        _db.OpenConnection();
         string sql = "select goal_name from goal";
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         MySqlDataReader reader = command.ExecuteReader();
@@ -105,7 +105,7 @@ public partial class RegistrationWindow : Window
 
     private void LoadDataActivityCmb()
     {
-        _db.OpenConnetion();
+        _db.OpenConnection();
         string sql = "select activity_name, activity_ratio from activity";
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         MySqlDataReader reader = command.ExecuteReader();
@@ -124,7 +124,7 @@ public partial class RegistrationWindow : Window
    
     private int GetSelectedId(string tableName, string selectedItem)
     {
-        _db.OpenConnetion();
+        _db.OpenConnection();
         string sql = $"select {tableName}_id from {tableName} where {tableName}_name = @name";
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         command.Parameters.AddWithValue("@name", selectedItem);

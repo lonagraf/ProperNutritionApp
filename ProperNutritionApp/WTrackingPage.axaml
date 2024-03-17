@@ -1,0 +1,29 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:oxy="http://oxyplot.org/avalonia"
+
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ProperNutritionApp.WTrackingPage">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <controls:Card Grid.Row="0" Margin="10" CornerRadius="10">
+            <StackPanel>
+                <TextBox Name="WeightTBox" Width="100" Margin="10"/>
+                <Button Name="AddWeightBtn" Width="100" Content="Добавить"/>
+            </StackPanel>
+        </controls:Card>
+        
+        <controls:Card Grid.Row="1"  Margin="10" CornerRadius="10">
+            <oxy:PlotView Name="PlotView" Background="White" Width="600" Height="400"/>
+        </controls:Card>
+    </Grid>
+</UserControl>
+

@@ -28,7 +28,7 @@ public partial class UserPage : UserControl
 
     private void ShowTable(string sql, int id)
     {
-        _db.OpenConnetion();
+        _db.OpenConnection();
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         command.Parameters.AddWithValue("@id", id);
         MySqlDataReader reader = command.ExecuteReader();

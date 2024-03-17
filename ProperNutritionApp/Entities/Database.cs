@@ -8,7 +8,7 @@ public class Database
     private MySqlConnection _connection =
         new MySqlConnection(@"server=localhost;database=nutrition;port=3306;User Id=root;password=IGraf123*");
 
-    public void OpenConnetion()
+    public void OpenConnection()
     {
         if (_connection.State == ConnectionState.Closed)
         {

@@ -29,7 +29,7 @@ public partial class RecipeInfo : UserControl
 
     private void ShowRecipeIngredient(string sql)
     {
-        _db.OpenConnetion();
+        _db.OpenConnection();
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         MySqlDataReader reader = command.ExecuteReader();
         while (reader.Read())

@@ -21,7 +21,7 @@ public partial class AuthWindow : Window
     private void SignInBtn_OnClick(object? sender, RoutedEventArgs e)
     { 
         string sql = "select user_id from user where username = @username and password = @password";
-        _db.OpenConnetion();
+        _db.OpenConnection();
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         command.Parameters.AddWithValue("@username", LoginTxt.Text);
         command.Parameters.AddWithValue("@password", PasswordTxt.Text);

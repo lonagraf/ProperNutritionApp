@@ -2,7 +2,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="ProperNutritionApp.DiaryPage">
-    Welcome to Avalonia!
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="500"/>
+        </Grid.RowDefinitions>
+        <Grid.Styles>
+            <Style Selector="materialIcons|MaterialIcon">
+                <Setter Property="Width" Value="30"></Setter>
+                <Setter Property="Height" Value="30"></Setter>
+            </Style>
+            <Style Selector="Button">
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+        </Grid.Styles>
+        
+        <controls:Card Grid.Row="0" Margin="10" CornerRadius="10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="BreakfastBtn" Width="250" Height="100" HorizontalAlignment="Center" Foreground="Black" Click="BreakfastBtn_OnClick">
+                <StackPanel Margin="-5">
+                    <materialIcons:MaterialIcon Kind="WeatherSunsetUp"/>
+                    <TextBlock Text="Завтрак"/>
+                </StackPanel>
+            </Button>
+                <Button Name="LunchBtn" Width="250" Height="100" HorizontalAlignment="Center" Foreground="Black">
+                    <StackPanel Margin="-5">
+                        <materialIcons:MaterialIcon Kind="WeatherSunny"/>
+                        <TextBlock Text="Обед"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="DinnerBtn" Width="250" Height="100" HorizontalAlignment="Center" Foreground="Black">
+                    <StackPanel Margin="-5">
+                        <materialIcons:MaterialIcon Kind="WeatherSunset"/>
+                        <TextBlock Text="Ужин"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </controls:Card>
+    </Grid>
 </UserControl>

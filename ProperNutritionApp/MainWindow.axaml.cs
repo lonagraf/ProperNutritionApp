@@ -32,4 +32,23 @@ public partial class MainWindow : Window
         RecipePage recipePage = new RecipePage();
         PagesPanel.Children.Add(recipePage);
     }
+
+    private void DiaryBtn_OnClick(object? sender, RoutedEventArgs e)
+    {
+        PagesPanel.Children.Clear();
+        DiaryPage diaryPage = new DiaryPage();
+        PagesPanel.Children.Add(diaryPage);
+    }
+
+    private void ReportBtn_OnClick(object? sender, RoutedEventArgs e)
+    {
+        PagesPanel.Children.Clear();
+        WTrackingPage wTrackingPage = new WTrackingPage();
+        PagesPanel.Children.Add(wTrackingPage);
+    }
+
+    private void LogoutBtn_OnClick(object? sender, RoutedEventArgs e)
+    {
+        this.Close();
+    }
 }

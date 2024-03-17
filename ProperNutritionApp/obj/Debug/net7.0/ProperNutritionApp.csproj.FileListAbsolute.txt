@@ -27,10 +27,6 @@ C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Avalonia.Win32.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Avalonia.X11.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\HarfBuzzSharp.dll
-C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\LiveCharts.dll
-C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\LiveChartsCore.dll
-C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\LiveChartsCore.SkiaSharpView.dll
-C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Material.Avalonia.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Material.Colors.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Material.Ripple.dll
@@ -42,7 +38,6 @@ C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\SkiaSharp.dll
-C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\SkiaSharp.HarfBuzz.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\System.IO.Pipelines.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Tmds.DBus.Protocol.dll
@@ -163,3 +158,6 @@ C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\Markdown.Avalonia.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\MsBox.Avalonia.dll
 C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\System.Reactive.dll
+C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\AvaloniaEdit.dll
+C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\OxyPlot.Avalonia.dll
+C:\Users\lonah\RiderProjects\ProperNutritionApp\ProperNutritionApp\bin\Debug\net7.0\OxyPlot.dll

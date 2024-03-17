@@ -22,7 +22,7 @@ public partial class RecipePage : UserControl
 
     private void ShowRecipeTable(string sql)
     {
-        _db.OpenConnetion();
+        _db.OpenConnection();
         MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
         MySqlDataReader reader = command.ExecuteReader();
         while (reader.Read())
