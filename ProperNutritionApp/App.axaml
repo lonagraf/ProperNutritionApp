@@ -9,7 +9,6 @@
         
     </Application.Resources>
     <Application.Styles>
-        <FluentTheme />
         <StyleInclude Source="avares://OxyPlot.Avalonia/Themes/Default.axaml"/>
         <themes:MaterialTheme PrimaryColor="Purple" SecondaryColor="Lime" />
         <avalonia:MaterialIconStyles />

@@ -8,8 +8,8 @@
              x:Class="ProperNutritionApp.DiaryPage">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="500"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.Styles>
             <Style Selector="materialIcons|MaterialIcon">
@@ -23,26 +23,55 @@
         </Grid.Styles>
         
         <controls:Card Grid.Row="0" Margin="10" CornerRadius="10">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Name="BreakfastBtn" Width="250" Height="100" HorizontalAlignment="Center" Foreground="Black" Click="BreakfastBtn_OnClick">
-                <StackPanel Margin="-5">
-                    <materialIcons:MaterialIcon Kind="WeatherSunsetUp"/>
-                    <TextBlock Text="Завтрак"/>
+            <Grid>
+                <Grid.Styles>
+                    <Style Selector="ComboBox">
+                        <Setter Property="Width" Value="250"/>
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                    <Style Selector="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="Margin" Value="10"/>
+                        <Setter Property="FontWeight" Value="DemiBold"/>
+                    </Style>
+                    <Style Selector="Button">
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                </Grid.Styles>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Время приема пищи"/>
+                    <ComboBox Name="TimeCBox"/>
+                    <TextBlock Text="Рецепт"/>
+                    <ComboBox Name="RecipeCBox"/>
+                    <Button Name="AddBtn" Content="Добавить" Click="AddBtn_OnClick"/>
                 </StackPanel>
-            </Button>
-                <Button Name="LunchBtn" Width="250" Height="100" HorizontalAlignment="Center" Foreground="Black">
-                    <StackPanel Margin="-5">
-                        <materialIcons:MaterialIcon Kind="WeatherSunny"/>
-                        <TextBlock Text="Обед"/>
-                    </StackPanel>
-                </Button>
-                <Button Name="DinnerBtn" Width="250" Height="100" HorizontalAlignment="Center" Foreground="Black">
-                    <StackPanel Margin="-5">
-                        <materialIcons:MaterialIcon Kind="WeatherSunset"/>
-                        <TextBlock Text="Ужин"/>
-                    </StackPanel>
-                </Button>
-            </StackPanel>
+            </Grid>
+        </controls:Card>
+        <controls:Card Grid.Row="1" Margin="10" CornerRadius="10">
+            <ScrollViewer>
+                <ListBox Name="LBoxDiary">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.Styles>
+                                    <Style Selector="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="FontWeight" Value="DemiBold"/>
+                                    </Style>
+                                </Grid.Styles>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" x:CompileBindings="False" Text="{Binding Date}"/>
+                                <TextBlock Grid.Column="1" x:CompileBindings="False" Text="{Binding Recipe}"/>
+                                <TextBlock Grid.Column="2" x:CompileBindings="False" Text="{Binding MealTime}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </ScrollViewer>
         </controls:Card>
     </Grid>
 </UserControl>

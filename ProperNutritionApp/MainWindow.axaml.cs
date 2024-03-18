@@ -36,14 +36,14 @@ public partial class MainWindow : Window
     private void DiaryBtn_OnClick(object? sender, RoutedEventArgs e)
     {
         PagesPanel.Children.Clear();
-        DiaryPage diaryPage = new DiaryPage();
+        DiaryPage diaryPage = new DiaryPage(_uId);
         PagesPanel.Children.Add(diaryPage);
     }
 
     private void ReportBtn_OnClick(object? sender, RoutedEventArgs e)
     {
         PagesPanel.Children.Clear();
-        WTrackingPage wTrackingPage = new WTrackingPage();
+        WTrackingPage wTrackingPage = new WTrackingPage(_uId);
         PagesPanel.Children.Add(wTrackingPage);
     }
 

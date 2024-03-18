@@ -17,7 +17,7 @@
         <controls:Card Grid.Row="0" Margin="10" CornerRadius="10">
             <StackPanel>
                 <TextBox Name="WeightTBox" Width="100" Margin="10"/>
-                <Button Name="AddWeightBtn" Width="100" Content="Добавить"/>
+                <Button Name="AddWeightBtn" Width="100" Content="Добавить" Click="AddWeightBtn_OnClick"/>
             </StackPanel>
         </controls:Card>
         

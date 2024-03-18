@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="ProperNutritionApp/AddMeal.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/App.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/AuthWindow.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />
         <entry key="ProperNutritionApp/DashboardPage.axaml" value="ProperNutritionApp/ProperNutritionApp.csproj" />

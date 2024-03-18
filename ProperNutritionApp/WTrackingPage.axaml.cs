@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using OxyPlot;
 using OxyPlot.Axes;
@@ -14,19 +15,21 @@ namespace ProperNutritionApp
     {
         private Database _db = new Database();
         private ObservableCollection<WeightTracking> _weightTrackings = new ObservableCollection<WeightTracking>();
-        private string sql = "select * from weight_tracking";
-
-        public WTrackingPage()
+        private string sql = "select * from weight_tracking where user = @id";
+        private int _uId;
+        public WTrackingPage(int userId)
         {
             InitializeComponent();
-            ShowTable(sql);
+            _uId = userId;
+            ShowTable(sql, _uId);
             PlotWeightTrackingData();
         }
 
-        public void ShowTable(string sql)
+        public void ShowTable(string sql, int id)
         {
             _db.OpenConnection();
             MySqlCommand command = new MySqlCommand(sql, _db.GetConnection());
+            command.Parameters.AddWithValue("@id", id);
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -72,6 +75,19 @@ namespace ProperNutritionApp
 
             PlotView.Model = plotModel;
         }
-        
+
+        private void AddWeightBtn_OnClick(object? sender, RoutedEventArgs e)
+        {
+            _db.OpenConnection();
+            string iSql = "insert into weight_tracking (user, date, weight) values (@user, current_date, @weight)";
+            MySqlCommand command = new MySqlCommand(iSql, _db.GetConnection());
+            command.Parameters.AddWithValue("@user", _uId);
+            command.Parameters.AddWithValue("@weight", WeightTBox.Text);
+            command.ExecuteNonQuery();
+            _db.CloseConnection();
+            _weightTrackings.Clear();
+            ShowTable(sql, _uId);
+            PlotWeightTrackingData();
+        }
     }
 }

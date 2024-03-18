@@ -12,4 +12,9 @@ public class Recipe
     public double Fat { get; set; }
     public double Carbs { get; set; }
     public byte[]? Image { get; set; }
+
+    public override string ToString()
+    {
+        return RecipeName;
+    }
 }
