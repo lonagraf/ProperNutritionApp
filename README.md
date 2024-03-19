@@ -19,3 +19,6 @@
 
 ![image](https://github.com/lonagraf/ProperNutritionApp/assets/122952983/d3add4e3-cfa8-41d0-87cd-a9717e191902)
 
+# Добавление приемов пищи
+
+![image](https://github.com/lonagraf/ProperNutritionApp/assets/122952983/b32444a9-b31c-407d-8249-8c20ac3906c7)
