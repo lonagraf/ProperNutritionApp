@@ -1,4 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\lonah\.nuget\packages\livechartscore.skiasharpview\2.0.0-rc1\lib\net6.0\LiveChartsCore.SkiaSharpView.dll" /&gt;&#xD;
-&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=78bf8a2f_002Dd259_002D4237_002Db36a_002D2c7b1d20c3cd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="BMICalculation_ValidData_" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::FB1CA645-8E18-4FEE-88C1-72CCC492C9E1::net7.0::KursachTests.Tests.MacronutrientsCalculation_ValidData&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

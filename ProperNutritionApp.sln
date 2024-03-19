@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProperNutritionApp", "ProperNutritionApp\ProperNutritionApp.csproj", "{8F7DBC6F-A203-4EEA-A8E8-4BA2153B8328}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KurLib", "KurLib\KurLib.csproj", "{70631303-7642-41E1-8FE6-CC7266AB60F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KursachTests", "KursachTests\KursachTests.csproj", "{FB1CA645-8E18-4FEE-88C1-72CCC492C9E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{8F7DBC6F-A203-4EEA-A8E8-4BA2153B8328}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F7DBC6F-A203-4EEA-A8E8-4BA2153B8328}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F7DBC6F-A203-4EEA-A8E8-4BA2153B8328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70631303-7642-41E1-8FE6-CC7266AB60F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70631303-7642-41E1-8FE6-CC7266AB60F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70631303-7642-41E1-8FE6-CC7266AB60F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70631303-7642-41E1-8FE6-CC7266AB60F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1CA645-8E18-4FEE-88C1-72CCC492C9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1CA645-8E18-4FEE-88C1-72CCC492C9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1CA645-8E18-4FEE-88C1-72CCC492C9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1CA645-8E18-4FEE-88C1-72CCC492C9E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

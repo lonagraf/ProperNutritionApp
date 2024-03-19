@@ -1,0 +1,12 @@
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\bin\Debug\net7.0\KurLib.deps.json
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\bin\Debug\net7.0\KurLib.dll
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\bin\Debug\net7.0\KurLib.pdb
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\KurLib.csproj.AssemblyReference.cache
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\KurLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\KurLib.AssemblyInfoInputs.cache
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\KurLib.AssemblyInfo.cs
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\KurLib.csproj.CoreCompileInputs.cache
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\KurLib.dll
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\refint\KurLib.dll
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\KurLib.pdb
+C:\Users\lonah\RiderProjects\ProperNutritionApp\KurLib\obj\Debug\net7.0\ref\KurLib.dll
